@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/accent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_player"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/img_album"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintWidth_percent="0.4"
+        app:srcCompat="@drawable/png_prambors_font"
+        app:tint="@color/grey_900" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_album"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintWidth_percent="0.5"
+        app:srcCompat="@drawable/ic_prambors_circle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_player"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_round_play_arrow_24"
+        android:tint="@color/grey_50"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_player"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="@id/btn_player"
+        app:layout_constraintRight_toRightOf="@id/btn_player"
+        app:layout_constraintTop_toTopOf="@id/btn_player"
+        app:layout_constraintWidth_percent="0.16" />
+</androidx.constraintlayout.widget.ConstraintLayout>

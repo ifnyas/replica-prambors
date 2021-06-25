@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Prambors</string>
+    <string name="stream_url"><![CDATA[http://14073.live.streamtheworld.com/PRAMBORS_FM.mp3?dist=pramborsweb&tdsdk=js-2.9&pname=tdwidgets&pversion=2.9&banners=300x250&sbmid=6ed1ffc0-966c-4f61-abf9-45fa0426f098]]></string>
+</resources>
